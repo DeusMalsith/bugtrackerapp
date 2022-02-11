@@ -6,7 +6,9 @@ const Nav = () => {
     <div>
       <ul className='flex justify-center w-full'>
         <li>
+          <Link to='/'>Home</Link>
           <Link to='/login'>Login</Link>
+          <Link to='/register'>Register</Link>
         </li>
       </ul>
     </div>
