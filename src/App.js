@@ -1,12 +1,20 @@
 import './output.css';
-import Layout from './components/common/Layout.js'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './common/Layout.js';
+import Home from './routes/home/Home.js';
+import Login from './routes/login/Login.js';
 
-function App({children}) {
+function App() {
   return (
     <div className='App'>
-    <Layout>
-      <h1>APP TEST</h1>
-    </Layout>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<Login />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
     </div>
   );
 }
