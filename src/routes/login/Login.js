@@ -8,13 +8,13 @@ const Login = () => {
         <form action=''>
           <label className='block py-5'>
             <span className='block pb-1 text-base font-medium text-neutral-200'>
-              Username
+              E-Mail
             </span>
             <input
               className='text-neutral-700 rounded'
-              type='text'
-              name='username'
-              id='username'
+              type='email'
+              name='email'
+              id='email'
               required
             />
           </label>

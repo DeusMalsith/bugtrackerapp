@@ -8,7 +8,7 @@ const Register = () => {
         <form action=''>
           <label className='block py-5'>
             <span className='block pb-1 text-base font-medium text-neutral-200'>
-              E-mail
+              E-Mail
             </span>
             <input
               className='text-neutral-700 rounded'
