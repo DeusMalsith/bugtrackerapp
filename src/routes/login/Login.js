@@ -15,6 +15,7 @@ const Login = () => {
               type='text'
               name='username'
               id='username'
+              required
             />
           </label>
           <label className='block pb-5'>
@@ -26,9 +27,15 @@ const Login = () => {
               type='password'
               name='password'
               id='password'
+              required
             />
           </label>
-          <button className='bg-white rounded text-neutral-700 w-16 mb-4' type="submit">Login</button>
+          <button
+            className='bg-white rounded text-neutral-700 w-16 mb-4'
+            type='submit'
+          >
+            Login
+          </button>
         </form>
       </div>
     </div>

@@ -4,6 +4,7 @@ import Layout from './common/Layout.js';
 import Home from './routes/home/Home.js';
 import Login from './routes/login/Login.js';
 import Register from './routes/register/Register';
+import Dashboard from './routes/dashboard/Dashboard';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
+            <Route path='/dashboard' element={<Dashboard />} />
           </Routes>
         </Layout>
       </BrowserRouter>
