@@ -1,0 +1,3 @@
+Submit bug form
+Show all bugs page/details
+Home page = readme
