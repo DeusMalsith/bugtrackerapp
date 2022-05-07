@@ -1,7 +1,22 @@
-import React from 'react';
-import { bugList } from '../../helpers/BugList';
+import React, { useEffect, useState, useCallback } from 'react';
+// import { bugList } from '../../helpers/BugList';
 
 const Dashboard = () => {
+  const [bugList, setBugList] = useState([]);
+  const fetchData = useCallback(async () => {
+    const response = await fetch('http://localhost:3000/test/buglist', {
+      method: 'GET',
+    });
+    console.log(response);
+    const data = await response.json();
+    console.log(data);
+    setBugList(data);
+  }, [setBugList]);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
+
   return (
     <div className='flex flex-col'>
       <div className='bg-slate-600 mt-40 w-6/12 flex flex-col self-center'>
