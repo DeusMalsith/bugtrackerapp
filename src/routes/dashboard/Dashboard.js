@@ -8,6 +8,9 @@ const Dashboard = () => {
       method: 'GET',
     });
     console.log(response);
+    if (!response.ok) {
+      alert('Failed to fetch data')
+    }
     const data = await response.json();
     console.log(data);
     setBugList(data);
